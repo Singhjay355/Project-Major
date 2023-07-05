@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: skyblue;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body bgcolor="sky blue">
+    <body background="bill.jpg">
+    <form action="/submit" method="post">
+        <h2>Registration Form</h2>
+        <label>First Name: <input type="text" name="first_name" placeholder="Enter first name" required></label>
+        <label>Last Name: <input type="text" name="last_name" placeholder="Enter last name" required></label>
+        <label>Date of Birth: <input type="date" name="dob" required></label>
+        <label>Gender: 
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>Email: <input type="email" name="email" placeholder="Enter email address" required></label>
+        <label>Phone: <input type="tel" name="phone" placeholder="Enter phone number" required></label>
+        <label>Insurance: <input type="text" name="insurance" placeholder="Enter insurance information"></label>
+        <label>Emergency Contact Name: <input type="text" name="emergency_contact_name" placeholder="Enter emergency contact name"></label>
+        <label>Emergency Contact Phone: <input type="tel" name="emergency_contact_phone" placeholder="Enter emergency contact phone number"></label>
+        <input type="submit" value="Submit" onclick="window.location.href='pbs.html'">
+    </form>
+</body>
+</html>

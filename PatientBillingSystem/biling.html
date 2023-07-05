@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PBS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="pbs.css">
+    <link rel="stylesheet" href="patient.css">
+</head>
+<body bgcolor="lightgrey">
+    <div class="navbar">
+        <div class="nav-left">
+            <h2>Patient Billing System</h2>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <label for="patient"></label>
+                <li class="Patient" id="dropdown">
+                    <a href="#Patient">Patient <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="toggle">
+                        <li><a href="inp.html"> In-Patient </a></li>
+                        <li><a href="outp.html"> Out-Patient </a></li> 
+                        <li><a href="patient.html"> Patient Information </a></li>                       
+                    </ul>
+                </li>
+                <li><a href="biling.html">Billing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </div>
+        </div>
+        <section id="home">
+            <div class="activity">
+                <h2 class="heading"> Billing Information </h2>
+                <div class="activities">
+                    <style>
+                        table, th, td { border: 1px solid black; width: 400px; }
+                     </style>
+                    <table>
+                        <tr><ul>
+                          <th>Patient Name</th>
+                          <th>Phone</th>
+                          <th>Email</th>
+                          <th>Discharged Date</th>
+                          <th>Total Biling Amount</th>
+                          <th>Total Deposited Amount</th>
+
+                        </tr></ul>
+                        <tr>
+                          <td>John</td>
+                          <td>4452236</td>
+                          <td>j@gmail.com</td>
+                          <td>14-02-2017</td>
+                          <td>$4500.00</td>
+                          <td>$4500.00</td>
+                        </tr>
+                        <tr>
+                            <td>Amar</td>
+                            <td>4452236</td>
+                            <td>a@gmail.com</td>
+                            <td>12-05-2017</td>
+                            <td>$950.00</td>
+                            <td>$950.00</td>
+                        </tr>
+                        <tr>
+                            <td>Hemant</td>
+                            <td>4452236</td>
+                            <td>hu@gmail.com</td>
+                            <td>18-06-2017</td>
+                            <td>$950.00</td>
+                            <td>$950.00</td>
+                        </tr>
+                        <tr>
+                            <td>Ankit</td>
+                            <td>4452236</td>
+                            <td>an@gmail.com</td>
+                            <td>29-10-2017</td>
+                            <td>$1050.00</td>
+                            <td>$1050.00</td>
+                        </tr>
+                        <tr>
+                            <td>Kunal</td>
+                            <td>4452236</td>
+                            <td>k@gmail.com</td>
+                            <td>15-12-2017</td>
+                            <td>$750.00</td>
+                            <td>$750.00</td>
+                        </tr>
+                        <tr>
+                            <td>Raj</td>
+                            <td>4452236</td>
+                            <td>rj@gmail.com</td>
+                            <td>18-09-2017</td>
+                            <td>$850.00</td>
+                            <td>$850.00</td>
+                        </tr>
+                      </table>
+                    </body>
+
+                    <script>
+                        const dropBtn = document.getElementById('dropdown')
+                    dropBtn.addEventListener('click', function () {
+                        console.log('clicked');
+                        const open = document.querySelector('.toggle')
+                        open.classList.toggle('active')
+                    })
+                    </script>            
+                            </section>
+                    </body>
+</body>
+</html>

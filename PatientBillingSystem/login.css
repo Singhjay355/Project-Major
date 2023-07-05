@@ -1,0 +1,89 @@
+input[type=text], input[type=password]{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #030804;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  h1{
+      text-align: center;
+  }
+  
+  
+  form{
+      width:35rem;
+      margin: auto;
+      color:black;
+  }
+  
+  input{
+      width: 150%;
+      margin: 10px 10;
+      border-radius: 10px;
+      padding: 15px 18px;
+      box-sizing: border-box;
+      
+    }
+  
+  button {
+      background-color: #030804;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 5px;
+      margin: 7px 0;
+      width: 100%;
+      font-size: 18px;
+    }
+  
+  button:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+    .headingsContainer{
+        text-align: center;
+    }
+    .mainContainer{
+        padding: 16px;
+    }
+    span.forgotpsd a {
+        float: right;
+        color:black;
+        padding-top: 16px;
+      }
+    
+    .forgotpsd a{
+        color: black;
+      }
+      
+    .forgotpsd a:link{
+        text-decoration: none;
+      }
+    
+      .register{
+        color: black;
+        text-align: center;
+      }
+      
+      .register a{
+        color:black;
+      }
+      
+      .register a:link{
+        text-decoration: none;
+      }
+    

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Out-Patient</title>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="addr"],
+        input[type="issue"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: skyblue;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body bgcolor="sky blue">
+    <body background="bill.jpg">
+    <form action="/submit" method="post">
+        <h2>Out-Patient Details</h2>
+        <label>Patient Name: <input type="text" name="first_name" placeholder="Enter full name" required></label>
+        <label>Date of Birth: <input type="date" name="dob" required></label>
+        <label>Gender: 
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+        <label>Blood Group: <input type="text" name="bloodgroup" placeholder="Enter bloodgroup" required></label>
+        <label>Email: <input type="email" name="email" placeholder="Enter email address" required></label>
+        <label>Phone: <input type="tel" name="phone" placeholder="Enter phone number" required></label>
+        <label>Address: <input type="addr" name="address" placeholder="Enter address" required></label>
+        <label>Admitted date: <input type="date" name="doa" required></label>
+        <label>Discharged date: <input type="date" name="doa" required></label>
+        <label>Issue: <input type="issue" name="issue" placeholder="Enter medical issue" required></label>
+        <label>Ward No: <input type="text" name="insurance" placeholder="Enter ward information"></label>
+        <label>Consulted Physician: <input type="text" name="emergency_contact_name" placeholder="Enter physician name"></label>
+        <label>Total Biling Amount: <input type="tel" name="emergency_contact_phone" placeholder="Enter total biling amount"></label>
+        <label>Total Deposited Amount: <input type="tel" name="emergency_contact_phone" placeholder="Enter total deposited amount"></label>
+        <input type="submit" value="Add" onclick="window.location.href='patient.html'">
+        <input type="submit" value="Delete" onclick="window.location.href='patient.html'">
+    </form>
+</body>
+</html>

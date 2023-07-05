@@ -1,0 +1,95 @@
+.dashboard {
+    padding: 10px;
+    text-align: center;
+}
+
+.heading {
+    margin: 10px 0;
+}
+
+.color-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+
+.box i {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+
+
+
+.box p {
+    line-height: 30px;
+}
+
+.skyblue {
+    background-color: rgb(135, 220, 253);
+}
+
+/* ======== Styling Recent Activity ======== */
+.activity {
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+
+}
+
+.activity table {
+    width: 100%;
+    text-align: center;
+
+}
+
+tr {
+    row-gap: 10px;
+    text-align: center;
+}
+
+th {
+    line-height: 60px;
+    text-align: center;
+}
+
+td {
+    line-height: 28px;
+}
+
+td,
+th {
+    margin: 0;
+}
+
+@media screen and (max-width:630px) {
+    section {
+        display: none;
+    }
+
+    .warning {
+        padding: 5rem;
+        text-align: center;
+        line-height: 35px;
+        background-color: rgb(185, 72, 72);
+        display: flex;
+        color: #e1cdcd;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+}
